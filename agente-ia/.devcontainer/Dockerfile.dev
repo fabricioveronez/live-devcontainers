@@ -1,0 +1,4 @@
+FROM mcr.microsoft.com/devcontainers/javascript-node:22
+USER node
+WORKDIR /app
+CMD ["tail", "-f", "/dev/null"]

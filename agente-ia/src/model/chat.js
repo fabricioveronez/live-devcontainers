@@ -14,8 +14,8 @@ process.env.OPENAI_API_KEY = process.env.OPENAI_API_KEY || "proj";
 export const getChatModel = () => {
     return new ChatOpenAI({
         configuration: {
-            //baseURL: "http://model-runner.docker.internal/engines/v1",
-            baseURL: "http://localhost:12434/engines/v1", // URL alternativa para desenvolvimento local
+            baseURL: "http://model-runner.docker.internal/engines/v1",
+            //baseURL: "http://localhost:12434/engines/v1", // URL alternativa para desenvolvimento local
         },
         modelName: "ai/gemma3:latest",
         temperature: 1,

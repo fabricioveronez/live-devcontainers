@@ -1,0 +1,19 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+	"name": "Untitled Node.js project",
+	"image": "node:22",
+  "remoteUser": "node",
+  "features": {
+    "ghcr.io/dhoeric/features/trivy:1": {},
+    "ghcr.io/devcontainers/features/aws-cli:1": {}
+  },
+"customizations": {
+  "vscode": {
+    "extensions": [
+      "ms-azuretools.vscode-docker",
+      "ms-kubernetes-tools.vscode-kubernetes-tools",
+      "aquasecurityofficial.trivy-vulnerability-scanner"
+    ]
+  }
+}
+}
